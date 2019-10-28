@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Brainster Box</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css?<?php echo time(); ?>" />
+    <link rel="stylesheet" type="text/css" href="assets/css/forms.css?<?php echo time(); ?>" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" id="nav-form">
+        <div class="container-fluid">
+            <div class="flex-nav">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 navbar-header sidenav">
+                    <i class="fas fa-bars" data-toggle="modal" data-toggle="modal" data-target="#sidebar-left"> Мени</i>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 navbar-brand text-center">
+                    <a href="#">
+                        <img class='center-block' src="assets/img/logo.png">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 buttons">
+                    <a class="hidden-sm hidden-xs" href="https://www.brainster.io/business">
+                        <button class="btn first"><strong>Обуки за компании</strong></button>
+                    </a>
+                    <a class="hidden-sm hidden-xs" href="https://www.brainster.io/business">
+                        <button class="btn second"><strong>Вработи наши студенти</strong></button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="modal fade left" id="sidebar-left" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img class="modal-title" src="assets/img/logo.png" width="40%">
+                        <i class="fa fa-times close" aria-hidden="true" data-dismiss="modal"> Затвори</i>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="list-group">
+                            <li>
+                                <a href="registration.html" class="yellow"><strong>Регистрирај се</strong></a>
+                            </li>
+                            <li>
+                                <a href="login.html" class="yellow"><strong>Најави се</strong></a>
+                            </li>
+                            <li>
+                                <a href="https://brainster.co/about" class="black"><strong>За нас</strong></a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/pg/brainster.co/photos/" class="black"><strong>Галерија</strong></a>
+                            </li>
+                            <li>
+                                <a href="https://brainster.co/contact" class="black"><strong>Контакт</strong></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row login">
+            <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 login-form">
+                <form class="text-center">
+                    <h2 class="yellow">Login Here</h2>
+                    <div class="form-group">
+                        <input placeholder="First Name" class="user" type="text">
+                        <span class="icon1"><i class="fas fa-user yellow" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="form-group">
+                        <input placeholder="Email" class="email" type="email">
+                        <span class="icon2"><i class="fas fa-envelope yellow" aria-hidden="true"></i></span>
+                    </div>
+                    <button class="btn center-block text-uppercase" type="submit">Login</button>
+                </form>
+                <p class="text-center white">Don't have an account?<a href="registration.html" class="register yellow"> Register</a></p>
+                <p class="text-center white"><a href="index.php" class="register yellow">Go Back On First Page</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer">
+        <div class="container">
+            <div class="row flex-footer">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 contacts">
+                    <a class="white about" href="https://brainster.co/about">About us</a>
+                    <a class="white contact" href="https://brainster.co/contact">Contact</a>
+                    <a class="white" href="https://www.facebook.com/pg/brainster.co/photos/">Galery</a>
+                </div>
+                <div class="text-center col-lg-4 col-md-4 col-sm-12 col-xs-12 footer-logo">
+                    <a href="#">
+                        <img src="assets/img/logo.png">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 social">
+                    <a href="https://www.linkedin.com/school/brainster-co/">
+                        <i class="fab fa-linkedin-in yellow"></i>
+                    </a>
+                    <a href="https://twitter.com/BrainsterCo">
+                        <i class="fab fa-twitter yellow"></i>
+                    </a>
+                    <a href="https://www.facebook.com/brainster.co">
+                        <i class="fab fa-facebook-f yellow"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="assets/js/nav-slider.js"></script>
+
+</html>
